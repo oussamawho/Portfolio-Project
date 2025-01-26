@@ -1,0 +1,537 @@
+ .big-circle {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        border: 3px solid #bbbbbb;
+        border-radius: 50%;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        animation: Rotate 20s linear infinite;
+        -webkit-animation: Rotate 20s linear infinite;
+    }
+    
+    .icon-block {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        -webkit-align-items: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        background-color: var(--clr-light);
+        box-shadow: 0 0 10px var(--clr-light) ;
+    }
+    
+    .icon-block img {
+        margin: 0px auto;
+        width: 60%;
+        animation: Rotate-reverse 20s linear infinite;
+        -webkit-animation: Rotate-reverse 20s linear infinite;
+    }
+    
+    .icon-block:first-child {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+    
+    .icon-block:nth-child(2) {
+        top: 50%;
+        right: 0;
+        transform: translate(50%, -50%);
+        -webkit-transform: translate(50%, -50%);
+    }
+    
+    .icon-block:nth-child(3) {
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        -webkit-transform: translate(-50%, 50%);
+    }
+    
+    .icon-block:nth-child(4) {
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+    
+    .rounding-sec {
+        position: relative;
+        height: 400px;
+        width: 400px;
+        margin: auto;
+    }
+    
+    .images {
+        width: 300px;
+    }
+    
+    .add-on-effect {
+        border-radius: 50%;
+     /*   background-color: #e24727;*/
+        background-color: var(--clr-light);
+        padding: 2px;
+    }
+    
+    .images {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+    
+    /* keyframe animation */
+    
+    @keyframes Rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @-webkit-keyframes Rotate {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes Rotate-reverse {
+        from {
+            transform: rotate(360deg);
+        }
+        to {
+            transform: rotate(0deg);
+        }
+    }
+    
+    @-webkit-keyframes Rotate-reverse {
+        from {
+            -webkit-transform: rotate(360deg);
+        }
+        to {
+            -webkit-transform: rotate(0deg);
+        }
+    }
+    
+
+
+.base-color {
+    color: #e24727 !important;
+}
+
+.bg-base-color {
+    background-color: #e24727 !important;
+}
+
+.z-index {
+    z-index: 2;
+}
+
+
+
+.w-40 {
+    width: 40% !important;
+}
+
+.pt-6,
+.py-6 {
+    padding-top: 6rem;
+}
+
+.pb-6,
+.py-6 {
+    padding-bottom: 6rem;
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+
+
+/*             HTML css  animation new*/
+
+
+.centerr-list{justify-content: center;padding-bottom: 200px;margin-top: -50px;}
+
+.mane-list{width: 90%;padding: 5px;justify-content: center;margin: auto;}
+.mane-mane{display: flex;}
+.mane-mane-mane{width: 50%;margin:20px;}
+
+.skill-box .skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    transition: 0.1s linear;
+    background: #eee;
+}
+
+.skill-box .skillbar:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.skill-box .skillbar-title {
+    position: absolute;
+    top: -28px;
+    left: -17px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.skill-box .skillbar-title span {
+    margin-left: 18px;
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--clr-light);
+}
+.skill-bar-percent{
+
+    font-weight: 800;
+    font-size: 18px;
+}
+.skill-box .skillbar-bar {
+    height: 3px;
+    width: 0%;
+    border-radius: 3px;
+    float: left;
+    background-color: var(--clr-moove);
+
+}
+
+.skill-box .skill-bar-percent {
+    position: absolute;
+    font-weight: 500;
+    bottom: 8px;
+    right: 0;
+}
+
+/*lighrt 
+
+*/
+
+.toggle-switch {
+   top:10px;
+    margin-left: 15px;
+position: relative;
+display: inline-block;
+width: 80px;
+height: 40px;
+cursor: pointer;
+}
+
+.toggle-switch input[type="checkbox"] {
+display: none;
+}
+
+.toggle-switch-background {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: var(--clr-bg);
+border-radius: 20px;
+box-shadow: inset 0 0 0 2px #ccc;
+transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-switch-handle {
+position: absolute;
+top: 5px;
+left: 5px;
+width: 30px;
+height: 30px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease-in-out;
+}
+
+.toggle-switch::before {
+content: "";
+position: absolute;
+top: -25px;
+right: -35px;
+font-size: 12px;
+font-weight: bold;
+color: #aaa;
+text-shadow: 1px 1px #fff;
+transition: color 0.3s ease-in-out;
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-switch-handle {
+transform: translateX(45px);
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 3px #000000;
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-switch-background {
+background-color: var(--clr-light);
+box-shadow: inset 0 0 0 2px var(--clr-light);
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-switch:before {
+content: "On";
+color: #05c46b;
+right: -15px;
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-switch-background .toggle-switch-handle {
+transform: translateX(40px);
+}
+/**/
+
+
+.wrapper {
+    width: 200px;
+    height: 60px;
+    position: relative;
+    top: -100px;
+    left: 40%;
+    z-index: 1;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle7124 .5s alternate infinite ease;
+  }
+  
+  @keyframes circle7124 {
+    0% {
+      top: 60px;
+      height: 5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+    }
+  
+    40% {
+      height: 20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+  
+    100% {
+      top: 0%;
+    }
+  }
+  
+  .circle:nth-child(2) {
+    left: 45%;
+    animation-delay: .2s;
+  }
+  
+  .circle:nth-child(3) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+  .shadow {
+    width: 20px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left: 15%;
+    filter: blur(1px);
+    animation: shadow046 .5s alternate infinite ease;
+  }
+  
+  @keyframes shadow046 {
+    0% {
+      transform: scaleX(1.5);
+    }
+  
+    40% {
+      transform: scaleX(1);
+      opacity: .7;
+    }
+  
+    100% {
+      transform: scaleX(.2);
+      opacity: .4;
+    }
+  }
+  
+  .shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: .2s
+  }
+  
+  .shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+
+  /*
+  
+  footer 
+  */
+/* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer {
+ /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  /*max-width: 1280px;*/
+  width: 100%;
+
+  background: rgb(36, 36, 36);
+
+}
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
